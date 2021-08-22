@@ -30,7 +30,7 @@ const Checkout = ({data}) => {
 						: (<div ><h3 style={{color:'red'}}>No items in your cart, try going to the SHOP</h3></div> )
 				}
 			</ul>
-			<footer style={{marginLeft:'8em'}}>
+			<footer style={{marginLeft:'28em'}}>
 				{Boolean(cart.length) && <div><button className="addtocart" style={{marginTop:'2em',fontSize:'1em'}}>Check out {useMoney(subtotal)}</button></div>}
 			</footer>
 		</Layout>
