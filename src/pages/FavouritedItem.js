@@ -16,7 +16,8 @@ const FavouritedItem = ({data}) => {
 
 	return (
 		<Layout>
-			<h2 style={{marginTop:'5em'}}>Favourite</h2>
+			<div style={{marginTop:'5em',backgroundolor: 'rgb(192, 172, 240)'}}>
+			<h2 style={{marginTop:'5em',backgroundolor: 'rgb(192, 172, 240)'}}>Favourite</h2>
 				<ul>
 					{ 
 						(fav.length)
@@ -41,6 +42,7 @@ const FavouritedItem = ({data}) => {
 				<footer style={{marginTop:'28em'}}>
 				
 				</footer>
+				</div>
 		</Layout>
 	)
 }

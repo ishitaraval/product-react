@@ -3,7 +3,10 @@
 }
 #root, html{
     margin:0;
+    background-color: rgb(192, 172, 240);
 }
+
+
 
 .topheader{
     max-width:100%;
@@ -13,18 +16,21 @@
 }
 .logo{
     width:200px;
+    margin-top: 3em;
 }
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(192, 172, 240);
     font-size:30px;
     font-weight:bold;
     text-align: center;
     text-transform:uppercase;
     margin-top: -2.5em;
-    margin-left: 2em;
+    margin-left: 0em;
 }
 
 .navbar{
+    background-color: rgb(192, 172, 240);
     max-width:100%;
     display:flex;
     flex-direction:row;
@@ -152,6 +158,7 @@ button[type=submit]{
 } */
 .product{
     margin-top:20px;
+    background-color: rgb(192, 172, 240);
 }
 .img-product{
   max-width:200px;

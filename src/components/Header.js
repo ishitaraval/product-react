@@ -11,7 +11,7 @@ const Header = () => {
     
    <header className="topheader" style={{backgroundColor:'black'}}>
       <Link to="/">
-       <img src= {logo} className="logo" style={{marginTop:'1.5em'}}/>
+       <img src= {logo} className="logo" style={{marginTop:'2.5em'}}/>
        </Link>
       <h2 style= {{color: 'black'}}>apple store</h2>
       <nav  className="navbar">

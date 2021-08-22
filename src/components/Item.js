@@ -3,6 +3,7 @@ import {CartContext, useMoney} from 'context/cart'
 
 
 
+
 const Item = ({data}) => {
 	// console.log("data:",data);
 	
