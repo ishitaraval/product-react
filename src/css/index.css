@@ -45,6 +45,7 @@ h2{
     gap: 1em;
     justify-content: space-between; 
 }
+
 ul{
     list-style-type:none;
     display: grid;
@@ -99,6 +100,9 @@ label{
     color:white;
    
 }
+.filters{
+    background-color: rgb(192, 172, 240);
+}
 .product-prop,.product-prop fieldset> ul {
     display: flex;
     flex-direction:row;
@@ -110,14 +114,16 @@ label{
 
 .product-prop{
     display: flex;
+    background-color: rgb(192, 172, 240);
     flex-direction:row;
     justify-content:flex-start;
     margin-bottom: 1em;
 }
 .sort-list{
     margin-top:20px;
-    background-color: rgb(77, 117, 141);
-    color:white;
+    margin-left: 2em;
+    background-color: #db8a2d;
+    color:black;
     padding:5px 10px;
     border:none;
     border-radius:3px;
@@ -153,7 +159,8 @@ button[type=submit]{
   margin-left:3em;
 }
 .addtocart{
-    border:none;
+    border:1em;
+    background-color: #4747ec;
 }
 .Image{
     max-width:200px;
@@ -200,7 +207,7 @@ input[type=button]{
     font-weight: normal;
 }
 .iproducts {
-    background-color: #ddd;
+    background-color: rgb(192, 172, 240);
     display: grid;
     grid-template-columns: auto auto 1fr;
     grid-gap: 1em;
@@ -217,14 +224,6 @@ input[type=button]{
     object-position: center top;
     border-radius: 50%;
   }
-  .iproduct {
-    background-color: #ddd;
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    grid-gap: 1em;
-    padding: 0.5em;
-    margin: 0.5em 0;
-  }
   .iproduct data {
     text-align: right;
   }
@@ -237,6 +236,10 @@ input[type=button]{
   .toplevel-main {
     flex-grow: 1;
   }
+  .iproducts img{
+    width: 400px;
+    height: 400px;
+}
   .loading{
       display: grid;
       place-content: center;
@@ -249,6 +252,11 @@ input[type=button]{
       color: #fff;
       font-size: 3em;
   }
+  .prod-details{
+    margin-left:20em;
+    text-align: center;
+    border-radius: 1em;
+}
   .flash{
       animation: flashing 2s infinite;
   }
@@ -271,17 +279,27 @@ input[type=button]{
     margin-left:10em;
     width:60em;
 }
-.img-product{
+.iproducts img{
     width:400px;
     margin-left:3em;
   }
+
+/* .prod-details{
+    margin-left:5em;
+    text-align: center;
+} */
+.price-filter{
+    width:fit-content;
+}
   .product{
     margin-top:20px;
 }
 .addtocart, .addtofav{
-    background-color:cornflowerblue;
-    border: none;
-    color: black;
+    background-color:#db8a2d;
+    border: 1em;
+    border-radius: 1em;
+    border-color: black;
+    color: rgb(0, 0, 0);
     padding: 1em 2em;
     text-align: center;
     text-decoration: none;

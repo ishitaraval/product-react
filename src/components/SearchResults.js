@@ -30,13 +30,13 @@ const SearchResults = ({result}) => {
 
   return (
     <div  style={{backgroundColor: 'black', padding: `1em`, maxWidth: 'inherit'}}>
-      <h3 style = {{backgroundColor:'rgb(182, 130, 93)', textAlign: 'center', color: 'black'}}>Results</h3>
-      <div id="iproducts" style={{backgroundColor: `salmon`, padding: `1em`,color:'black'}}>
+      <h3 style = {{backgroundColor:'#db8a2d', textAlign: 'center', color: 'black',fontSize:'2em'}}>Results</h3>
+      <div id="iproducts" style={{backgroundColor: `black`, padding: `1em`,color:'black'}}>
         {(theProducts.length) ? theProducts : `No matching products`}
       </div>
       
       
-      <p id="numProducts" style={{backgroundColor: `lightgreen` , color:'black'}}>
+      <p id="numProducts" style={{backgroundColor: `#db8a2d` , color:'black'}}>
        <button onClick={()=> updatePage(currPage-1)} disabled={(currPage === 1 )?`disabled`:``}>
          <span className="material-icons">navigate_before</span>
        </button>

@@ -101,14 +101,15 @@ const handleSortChange = ({target}) => {
 console.log(searchState)
 return (
  <Layout>
-    <h2 style={{paddingTop: '140px'}}>Filters</h2>
+    
    
     <div className="filters">
+    <h2 style={{paddingTop: '140px',backgroundColor:'rgb(192, 172, 240)'}}>Filters</h2>
       <div>
        <form className="product-prop">
-          <fieldset>
+          <fieldset className="price-filter">
             <legend>Price:</legend>
-            <input type="range" name="price"  id="filterPrice" value={minPrice} min="699.00" max="1319.00" step="1"  onChange={handlePriceChange}/>
+            <input style={{width:'fit-content'}} type="range" name="price"  id="filterPrice" value={minPrice} min="699.00" max="1319.00" step="1"  onChange={handlePriceChange}/>
             <output htmlFor="filterPrice" style={{fontSize: '1.2em'}}> {minPrice.toFixed(1)}</output>
           </fieldset>
           
@@ -190,12 +191,13 @@ return (
         </form>
       </div>
         
-      <label htmlFor="sort"style={{color:"black"}}>Sort by: </label>
+      <label htmlFor="sort"style={{color:"black", marginTop:'2em'}}>Sort by: 
         <select name="sort" id="sortBy" className="sort-list" defaultValue="0" onChange={handleSortChange}>
          <option value="0">price, lowest to highest</option>
          <option value="1">price, highest to lowest</option>
+      
        </select>
-       
+       </label>
     </div>
     
     <SearchResults result={searchResult}/>

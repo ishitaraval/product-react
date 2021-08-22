@@ -35,7 +35,7 @@ return (
             <Image src={photo} alt= {name} className="img-product"/>
             
              <div className="prod-details">
-             <h3  style={{color:'blueviolet', textDecoration:'underline'}}><Link to={`/single_products/${data.id}`}>{name}</Link></h3>
+             <h3  style={{color:'#0505d2', textDecoration:'underline'}}><Link to={`/single_products/${data.id}`} style={{color:'black',textDecoration:'underline'}}>{name}</Link></h3>
                <data value={price}><del>${price[0]}</del> <ins>${price[1]}</ins></data>
                <p>{descrip}.</p>
                <form>
@@ -56,7 +56,7 @@ return (
                  <dt>Ratings(Above):</dt>
                    <dd>{the_r}</dd>
                </dl>
-               <a href="#"style={{color: `lightseagreen`, textDecoration: `underline`}}>see more</a>
+               <a href="#"style={{color: `#0505d2`, textDecoration: `underline`}}>see more</a>
                <div className="product-cart">
                  {/* <input type="button" id="addtocart"onClick={() => updater(id)} value="addtocart" className="add-cart"></input> */}
                  <Item key={id} data={data} />

@@ -9,11 +9,11 @@ const Header = () => {
 
   return (
     
-   <header className="topheader">
+   <header className="topheader" style={{backgroundColor:'black'}}>
       <Link to="/">
-       <img src= {logo} className="logo"/>
+       <img src= {logo} className="logo" style={{marginTop:'1.5em'}}/>
        </Link>
-      <h2 style= {{color: 'white'}}>apple store</h2>
+      <h2 style= {{color: 'black'}}>apple store</h2>
       <nav  className="navbar">
         <fieldset className="search">
        <label htmlFor="sort" style={{color:"white",padding:'5px 10px'}}>Search Product Name:</label>
